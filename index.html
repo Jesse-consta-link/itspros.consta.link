@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS Pros</title>
+	<link rel="icon" type="image/x-icon" href="/Images/its-logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/its-logo.png" alt="ITS Pros Logo">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what-we-do">What We Do</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+	<!-- Header Section -->
+    <header id="home">
+        <div class="header-image">
+            <div class="overlay">
+                <h1>Your local resource for all of<br>your technology needs.</h1>
+                <h3>Technology is changing at the speed of light! You deserve a partner that can help you find the tools to help you delight your customers.</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-box box-color-1">
+                <img src="/Images/Image.png" alt="Managed IT Services Icon">
+                <h3>Telephone Services</h3>
+                <p>VoIP service providers offer many highly advanced, next-generation calling, texting, video, and conferencing features. Often these VoIP features are included and are valuable assets every step of the way throughout your specific communication needs.</p>
+            </div>
+            <div class="service-box box-color-2">
+                <img src="/Images/Image_2.png" alt="Cybersecurity Icon">
+                <h3>Internet Services</h3>
+                <p>Finding the best internet provider in your area is all about figuring out your needs and matching them with the pool of available services.</p>
+            </div>
+            <div class="service-box box-color-3">
+                <img src="/Images/Image_3.png" alt="Cloud Solutions Icon">
+                <h3>Managed IT Services</h3>
+                <p>Managed IT services enable organizations to outsource IT tasks to a vendor as contracted or subscription services. These services can be used to lighten the workload of in-house teams, supplement teams that are unable to meet IT demand, or to replace in-house teams.</p>
+            </div>
+            <div class="service-box box-color-4">
+                <img src="/Images/Image_4.png" alt="Data Backup & Recovery Icon">
+                <h3>Website Development</h3>
+                <p>Your website is the face of your company. Creating a stunning website, therefore, should be your top priority. If you seriously want to build an engaging website and boost your business, you need an experienced web development partner.</p>
+            </div>
+            <div class="service-box box-color-5">
+                <img src="/Images/Image_5.png">
+                <h3>Healthcare Technology</h3>
+                <p>Healthcare Technology is defined as products and services developed to improve productivity of medical providers and health administrative services and enhance access to and quality of healthcare. We can help you find the tools you need to help your practice succeed.</p>
+            </div>
+            <div class="service-box box-color-6">
+                <img src="/Images/Image_6.png" alt="Consulting Services Icon">
+                <h3>Other Services</h3>
+                <p>ITS, LLC offers video security solutions, business texting, and mass notification for commercial properties of all sizes and industries. We offer expert support, catered solutions and top-of-the-line software  to increase awareness into your business processes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>ITS is a small veteran owned business located in Fernandina Beach FL and has been providing exceptional service to our customers since 2006. We are a full service technology brokerage company helping our customers’ source best in class technology products needed for their businesses. We specialize in VoIP Telephone Systems, Managed IT Services and Cybersecurity, Internet Services, Website Development, Healthcare Technology, and other Cloud Services.</p>
+
+		<p>We believe you deserve access to a local company with a global reach able to deploy products and services Worldwide. We are also a Certified Florida Electrical Contractor (Lic # ES12000827) and are authorized to perform installation work in all counties throughout the entire state of Florida.</p>
+
+		<p>Our mission is to provide quality, reliable solutions for your voice, data, and cloud service needs. Being owner operated gives us an advantage of providing personal relationships with our customers. We are committed to bringing you the best quality technology solutions while ensuring you get the most out of technology budgets.</p>
+
+		<p>We appreciate that you have invested your time to come to our site so feel free to contact us to discuss how our products and services can help your business cut costs and run more efficiently.</p>
+      	<img src="/Images/All-Sherpas.png">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-overlay">
+        	<h2>Contact Us</h2>
+        	<p>Have questions or need assistance? We’re here to help.</p>
+        	<p>Email us at: <a href="mailto:info@itspros.net">info@itspros.net</a></p>
+        	<p>Call us at: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        	<div class="social-icons">
+        		<a href="https://www.facebook.com/kelly.dawson.12327"><img src="/Images/facebook-logo.png" alt="Facebook"></a>
+            	<a href="https://www.linkedin.com/in/kelly-dawson-usaf-ret"><img src="/Images/linkedin-logo.png" alt="LinkedIn"></a>
+      		</div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 ITS Pros. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+       // Toggle menu visibility
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
